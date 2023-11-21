@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="cabecalho">
+            <a class="logo" href="#"><img src="./img/iconeVerdesVales.jpg" alt="Logo TV Verdes Vales"></a>
+            <ul class="redes">
+                <li>
+                    <a href="https://www.youtube.com/@TvVerdeValeCanal13" target="_blank">
+                    <img src="./img/youtube.png" alt="youtube"></a>
+                </li>
+                <li class="instaIcon"><a href="https://www.instagram.com/tvverdevale/">
+                    <img src="./img/Insta.png" alt="instagram">
+                    </a>
+                </li>
+                <li class="faceIcon">
+                    <a href="https://www.facebook.com/tvverdevale/?locale=pt_BR">
+                        <img src="./img/Facee.png" alt="facebook">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="pesquisa">
+        <input type="text" placeholder="buscar">
+        <button ><span class="material-symbols-outlined">search</span></button>
+    </div>
+    <div class="noticias">
+        <div class="carrosel">
+          <div class="slide"><img src="./img/1311649.jpg" alt="Imagem 1"></div>
+          <div class="slide"><img src="./img/1338867.png" alt="Imagem 2"></div>
+          <div class="slide"><img src="./img/star wars.jpg" alt="Imagem 3"></div>
+          <!-- Adicione mais slides conforme necessário -->
+        </div>
+        <button id="prevBtn">Anterior</button>
+        <button id="nextBtn">Próximo</button>
+    </div>
+    <div class="menu"></div>
+      
+    <script>
+    
+        const carousel = document.querySelector('.carrosel');
+        const prevButton = document.getElementById('prevBtn');
+        const nextButton = document.getElementById('nextBtn');
+        let counter = 0;
+        
+        nextButton.addEventListener('click', () => {
+          counter++;
+          carousel.style.transform = `translateX(${-counter * 100}%)`;
+        });
+        
+        prevButton.addEventListener('click', () => {
+          if (counter > 0) {
+            counter--;
+            carousel.style.transform = `translateX(${-counter * 100}%)`;
+          }
+        });
+        </script>
+</body>
+</html>
