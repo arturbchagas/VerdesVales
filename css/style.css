@@ -6,69 +6,46 @@
     list-style: none;
     text-decoration: none;
 }
-.cabecalho{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 2rem ;
+body, html{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+.cabecalho nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem 0 1rem;
 }
 
 .logo img{
-    width: 5rem;}
+  margin:  0.4rem 0;
+  width: 25%;}
 .redes{
-    display: flex;
+  display: flex;
 }
 .redes a{
-    margin: 0.2rem;
+  margin: 0.2rem;
 }
 .redes img{
-    width: 2rem;
+  width: 2rem;
 }
 .pesquisa{
     display: flex;
     justify-content: center;
-    padding: 1rem 2rem;
+    margin: 0 0 2rem 0;
 }
 .pesquisa input{
-    width: 70%;
+    width:70%;
 }
 .noticias {
-    width: 80%;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-  }
-  
-.carrosel {
-    display: flex;
-    transition: transform 0.5s ease;
-  }
-  
-.slide {
-    flex: 0 0 100%;
-  }
-  
-.slide img{
-    max-width: 100%;
-    height: auto;
-  }
-  
-.noticias button{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 8px 16px;
-    border: none;
-    background-color: #333;
-    color: white;
-    cursor: pointer;
-  }
-  
-#prevBtn {
-    left: 0;
-  }
-  
-#nextBtn {
-    right: 0;
-  }
-  
+  flex: 1;
+}
+
+footer{
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
