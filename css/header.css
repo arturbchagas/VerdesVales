@@ -1,10 +1,88 @@
+.cabecalho {
+    background-color: #f0f1f1;
+}
 .logo {
-    margin-left: 1rem;
-    width: 8rem;
+    margin:0.5rem 0.5rem 0.5rem 2rem;
+    width: 12rem;
 }
-.redes a{
-    margin: 0.5rem;
+
+.pesquisa {
+    
+    
+    background: #fff;
+    height: 2rem;
+    border-radius: 2rem;
+    padding: 0.6rem 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.8s;
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+    -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+inset -4px -4px 6px 0 rgba(255,255,255,.2),
+inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+    
 }
-.redes img {
-    width: 1.5rem;
+.pesquisa:hover {
+    animation: hoverShake 0.15s linear 3;
 }
+.pesquisa:hover > input{
+    width: 14rem;
+}
+
+.pesquisa input{
+    background: transparent;
+    border: none;
+    outline:none;
+    width: 0px;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: 0.8s    
+}
+@keyframes hoverShake {
+    0% {transform: skew(0deg,0deg);}
+    25% {transform: skew(5deg, 5deg);}
+    75% {transform: skew(-5deg, -5deg);}
+    100% {transform: skew(0deg,0deg);}
+  }
+
+
+.links-navegacao{
+    padding: 0 0.2rem;
+    font-size: 1rem;
+    margin: 0;
+    border-right:0.1rem solid black;
+    
+}
+.navbar .link-desativado {
+    display: none;
+}
+.navbar span{
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 1080px) {
+    .linha-cabecalho .col-8{
+        flex-direction: wrap;
+    }
+  .navegacao-margem {
+   
+    padding: 0 4rem;
+  }
+    .navbar a{
+        margin: 0 1rem;
+        padding: 0 1rem;
+
+    }
+    .navegacao .navbar {
+        position: relative;
+             
+    }
+  
+    .links-navegacao{
+        font-size: 1rem;
+        
+    }
+   
+}   

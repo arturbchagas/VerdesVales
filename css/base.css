@@ -1,3 +1,6 @@
 body{
-    background-color: gray;
+    background-color: #e9e8e8a2;
+}
+.container {
+    padding: 0.5rem;
 }

@@ -1,0 +1,33 @@
+.carrosel-noticias {
+    padding: 0.5rem;
+    background-color: white;
+    margin-bottom: 1rem;
+}
+.carrosel-noticias h1{
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    
+}
+.ultimas-noticias{
+    padding:1rem 0 ;
+    background-color: white;
+    margin: 0 0.5rem;
+    border-radius: 1rem;
+
+}
+.ultimas-noticias h2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.noticia {  
+    margin-bottom: 1rem;
+    
+}
+.cards {
+    padding-bottom: 1rem;
+    border-bottom: 0.1rem solid black;
+}
