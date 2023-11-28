@@ -1,14 +1,20 @@
 .cabecalho {
-    background-color: #f0f1f1;
+    background-color: rgb(46, 192, 124);
+    margin-bottom: 1rem;
+     
+}
+.redes {
+    padding: 0.5rem;
 }
 .logo {
     margin:0.5rem 0.5rem 0.5rem 2rem;
-    width: 12rem;
+    width: 10rem;
+}
+.linha-pesquisa {
+    padding: 0.5rem;
 }
 
 .pesquisa {
-    
-    
     background: #fff;
     height: 2rem;
     border-radius: 2rem;
@@ -28,7 +34,7 @@ inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
     animation: hoverShake 0.15s linear 3;
 }
 .pesquisa:hover > input{
-    width: 14rem;
+    width: 12rem;
 }
 
 .pesquisa input{
@@ -52,33 +58,75 @@ inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
     padding: 0 0.2rem;
     font-size: 1rem;
     margin: 0;
-    border-right:0.1rem solid black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
     
 }
-.navbar .link-desativado {
-    display: none;
+.navbar-flex {
+    padding: 0.5rem 0.2rem;
+    display: flex;
 }
+.navbar-brand {
+   margin: auto;
+}
+
+
 .navbar span{
+    text-align: end;
     font-size: 1rem;
 }
 
-@media screen and (min-width: 1080px) {
-    .linha-cabecalho .col-8{
-        flex-direction: wrap;
-    }
+@media screen and (min-width: 1024px) {
+   
+   .cabecalho {
+        padding: 2rem 2rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+   }
+   .redes {
+    flex-basis: auto;
+    flex-grow:0.1;
+   }
+   .cabecalho .redes ul{
+        margin: 0;
+   }
+   .linha-logo {
+    flex-grow: 22;
+   }
+   .linha-logo img{
+    margin: 0;
+   }
+   .navegacao {
+    margin: auto;
+   }
   .navegacao-margem {
    
-    padding: 0 4rem;
+    padding: 0 9rem;
   }
+  .navbar {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    
+  }
+   .navbar-flex {
+    padding: 0.5rem 0;
+    
+  }
+  
     .navbar a{
-        margin: 0 1rem;
-        padding: 0 1rem;
+        margin: 0 0.7rem;
+        padding: 0 0.4rem;
 
     }
     .navegacao .navbar {
         position: relative;
              
     }
+   
   
     .links-navegacao{
         font-size: 1rem;

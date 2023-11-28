@@ -1,9 +1,11 @@
 .carrosel-noticias {
-    padding: 0.5rem;
+    padding: 2rem 0;
     background-color: white;
     margin-bottom: 1rem;
+    
 }
 .carrosel-noticias h1{
+    
     text-align: center;
     font-size: 1.75rem;
     margin-bottom: 1rem;
@@ -22,12 +24,40 @@
     font-family: "Montserrat", sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
+    text-align: center;
 }
 .noticia {  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 1rem;
     
 }
 .cards {
     padding-bottom: 1rem;
     border-bottom: 0.1rem solid black;
+}
+@media screen and (min-width:1024px) {
+    .cards-noticias {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; 
+        justify-content: flex-start;
+        
+    }
+    .noticia {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 1rem 1.5rem;
+    }
+    .titulo-cards {
+       padding: 0.5rem;
+    }
+    .titulo-cards h2 {
+        text-align: start;
+        padding-bottom: 0.3rem;
+        border-bottom: 2px solid green; 
+        width: 14rem;
+    }
 }

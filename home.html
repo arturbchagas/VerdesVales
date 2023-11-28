@@ -17,25 +17,25 @@
   <link rel="stylesheet" href="./css/pesquisa.css" />
   <link rel="stylesheet" href="./css/noticias.css" />
   <link rel="stylesheet" href="./css/navegacao.css">
-  <link rel="stylesheet" href="./css/btn_social.css">
+  <link rel="stylesheet" href="./css/rodape.css">
   <title>Home</title>
 </head>
 
 <body>
   <header>
-    <div class="container cabecalho">
+    <div class=" cabecalho">
       <nav class="btn_social nav  redes">
-        <ul>
+        <ul >
           <li><a href="#" target="_blank" title="facebook"><i class=" bi bi-youtube"></i></a></li>
           <li><a href="#" target="_blank" title="instagram"><i class="bi bi-facebook"></i></a></li>
           <li><a href="#" target="_blank" title="youtube"><i class="bi bi-instagram"></i></a></li>
         </ul>
       </nav>
-      <div class="row linha-cabecalho justify-content-center">
-        <img class="logo" src="./img/nome_verde_maior.png" alt="" />
+      <div class="nav linha-logo justify-content-center">
+        <img class="logo" src="./img/logo2.png" alt="" />
       </div>
 
-      <div class="row linha-pesquisa justify-content-center">
+      <div class="nav linha-pesquisa justify-content-center">
         <div class="pesquisa ">
           <input type="text" placeholder="buscar" />
           <a href=""> <i class="bi bi-search"></i></span></a>
@@ -44,26 +44,19 @@
       </div>
     </div>
     <div class=" navegacao">
-      <nav class="navbar fixed-bottom navbar-expand-lg navbar-light bg-light">
-        <div class="container navegacao_margem">
-        <ul class="navbar-nav lista-brand mr-auto ul">
-          <li class="nav-item active">
+      <nav class="navbar  fixed-bottom navbar-expand-lg navbar-light bg-light">
+        <div class=" container  navbar-flex ">
           <a class="navbar-brand links-navegacao" href="#">Inicio</a>
-        </li>
-        <li class="nav-item">
           <a class="navbar-brand links-navegacao" href="#">Programaçao</a>
-        </li>
-        <li class="nav-item">
           <a class="navbar-brand links-navegacao" href="#">Jornalismo</a>
-        </li>
-      </ul>
+   
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
           aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-          <ul class="navbar-nav lista-collapse mr-auto">
+        <div class="collapse navbar-escondido navbar-collapse" id="conteudoNavbarSuportado">
+          <ul class=" navbar-nav lista-collapse mr-auto">
             <li class="nav-item active">
               <a class="nav-link links-navegacao " href="#">Esporte</a>
             </li>
@@ -80,7 +73,7 @@
               <a class="nav-link links-navegacao" href="#">Economia</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link  links-navegacao" href="#">Quem Somos ?</a>
+              <a class="nav-link  links-navegacao" href="#">Quem Somos?</a>
             </li>
           </ul>
         </div>
@@ -91,7 +84,7 @@
     </div>
   </header>
   <main>
-    <div class="container">
+    <div class="container-fluid">
       <div class="carrosel-noticias">
         <h1>Principais Notícias</h1>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -126,12 +119,13 @@
         </div>
       </div>
       <div class="ultimas-noticias">
-        <div class="row justify-content-center ">
+        <div class="titulo-cards">
           <h2> Ultimas Notícias</h2>
         </div>
-        <div class="row noticia justify-content-center">
+      <div class="cards-noticias">
+        <div class=" noticia justify-content-center">
           <div class="cards">
-            <div class="card" style="width: 20rem">
+            <div class="card" style="width: 16rem">
               <img class="card-img-top" src="./img/star wars.jpg" alt="Imagem de capa do card" />
               <div class="card-body">
                 <h5 class="card-title">Eu nao aguento mais</h5>
@@ -144,9 +138,9 @@
             </div>
           </div>
         </div>
-        <div class="row noticia justify-content-center">
+        <div class=" noticia justify-content-center">
           <div class="cards">
-            <div class="card" style="width: 20rem">
+            <div class="card" style="width: 16rem">
               <img class="card-img-top" src="./img/star wars.jpg" alt="Imagem de capa do card" />
               <div class="card-body">
                 <h5 class="card-title">Eu nao aguento mais</h5>
@@ -159,9 +153,9 @@
             </div>
           </div>
         </div>
-        <div class="row noticia justify-content-center">
+        <div class="noticia justify-content-center">
           <div class="cards">
-            <div class="card" style="width: 20rem">
+            <div class="card" style="width: 16rem">
               <img class="card-img-top" src="./img/star wars.jpg" alt="Imagem de capa do card" />
               <div class="card-body">
                 <h5 class="card-title">Eu nao aguento mais</h5>
@@ -174,9 +168,9 @@
             </div>
           </div>
         </div>
-        <div class="row noticia justify-content-center">
+        <div class="noticia justify-content-center">
           <div class="cards">
-            <div class="card" style="width: 20rem">
+            <div class="card" style="width: 16rem">
               <img class="card-img-top" src="./img/star wars.jpg" alt="Imagem de capa do card" />
               <div class="card-body">
                 <h5 class="card-title">Eu nao aguento mais</h5>
@@ -189,9 +183,41 @@
             </div>
           </div>
         </div>
-        <div class="row noticia justify-content-center">
+        <div class="noticia justify-content-center">
           <div class="cards">
-            <div class="card" style="width: 20rem">
+            <div class="card" style="width: 16rem">
+              <img class="card-img-top" src="./img/star wars.jpg" alt="Imagem de capa do card" />
+              <div class="card-body">
+                <h5 class="card-title">Eu nao aguento mais</h5>
+                <p class="card-text">
+                  Artur Batista Chagas, estudante de ti, tdah, depressivo, e
+                  coisas piores, essa é a descriçao de um estudante de merda
+
+                </p>
+                <a href="#" class="btn btn-primary">Visitar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="noticia justify-content-center">
+          <div class="cards">
+            <div class="card" style="width: 16rem">
+              <img class="card-img-top" src="./img/star wars.jpg" alt="Imagem de capa do card" />
+              <div class="card-body">
+                <h5 class="card-title">Eu nao aguento mais</h5>
+                <p class="card-text">
+                  Artur Batista Chagas, estudante de ti, tdah, depressivo, e
+                  coisas piores, essa é a descriçao de um estudante de merda
+
+                </p>
+                <a href="#" class="btn btn-primary">Visitar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="noticia justify-content-center">
+          <div class="cards">
+            <div class="card" style="width: 16rem">
               <img class="card-img-top" src="./img/star wars.jpg" alt="Imagem de capa do card" />
               <div class="card-body">
                 <h5 class="card-title">Eu nao aguento mais</h5>
@@ -209,6 +235,20 @@
     </div>
   </main>
   <footer>
+    <div class="rodape">
+      <nav class="btn_social nav  redes">
+        <ul >
+          <li><a href="#" target="_blank" title="facebook"><i class=" bi bi-youtube"></i></a></li>
+          <li><a href="#" target="_blank" title="instagram"><i class="bi bi-facebook"></i></a></li>
+          <li><a href="#" target="_blank" title="youtube"><i class="bi bi-instagram"></i></a></li>
+        </ul>
+      </nav>
+      <a href="#" target="_blank" title="WordPress">Proudly powered by WordPress</a>
+    </div>
+    
+      <a href="https://api.whatsapp.com/send?phone=55{DDDNÚMERO}" class="whats-button" aria-label="Botão para contato no WhatsApp"><i class="bi whats-icon bi-whatsapp"></i></a>
+    
+  </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
