@@ -16,8 +16,8 @@
   <link rel="stylesheet" href="./css/header.css" />
   <link rel="stylesheet" href="./css/pesquisa.css" />
   <link rel="stylesheet" href="./css/noticias.css" />
-  <link rel="stylesheet" href="./css/navegacao.css">
   <link rel="stylesheet" href="./css/rodape.css">
+  
   <title>Home</title>
 </head>
 
@@ -26,93 +26,120 @@
     <div class=" cabecalho">
       <nav class="btn_social nav  redes">
         <ul >
-          <li><a href="#" target="_blank" title="facebook"><i class=" bi bi-youtube"></i></a></li>
-          <li><a href="#" target="_blank" title="instagram"><i class="bi bi-facebook"></i></a></li>
-          <li><a href="#" target="_blank" title="youtube"><i class="bi bi-instagram"></i></a></li>
+          <li><a href="#" target="_blank" title="facebook" alt="logo do youtube"><i class=" bi bi-youtube"></i></a></li>
+          <li><a href="#" target="_blank" title="instagram" alt="logo do facebook"><i class="bi bi-facebook"></i></a></li>
+          <li><a href="#" target="_blank" title="youtube" alt="logo do insta"><i class="bi bi-instagram"></i></a></li>
         </ul>
       </nav>
       <div class="nav linha-logo justify-content-center">
-        <img class="logo" src="./img/logo2.png" alt="" />
+        <img class="logo" src="./img/logo2.png" alt="logo tv verdes vales" />
       </div>
 
       <div class="nav linha-pesquisa justify-content-center">
         <div class="pesquisa ">
           <input type="text" placeholder="buscar" />
-          <a href=""> <i class="bi bi-search"></i></span></a>
+          <a href=""><i class="bi bi-search"></i></span></a>
           
         </div>
       </div>
     </div>
-    <div class=" navegacao">
-      <nav class="navbar  fixed-bottom navbar-expand-lg navbar-light bg-light">
-        <div class=" container  navbar-flex ">
-          <a class="navbar-brand links-navegacao" href="#">Inicio</a>
-          <a class="navbar-brand links-navegacao" href="#">Programaçao</a>
-          <a class="navbar-brand links-navegacao" href="#">Jornalismo</a>
+    <div class="navegacao w-100">
    
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+      <nav class="navbar w-100 navbar-expand-lg  ">
+       
+          <a class="navbar-brand links-navegacao" href="./home.html">Inicio</a>
+      
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
           aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-          <span class="navbar-toggler-icon"></span>
+          <span><i class="bi bi-list"></i></span>
         </button>
-
-        <div class="collapse navbar-escondido navbar-collapse" id="conteudoNavbarSuportado">
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
           <ul class=" navbar-nav lista-collapse mr-auto">
+            <li class="nav-item dropdown">  
+              <a class=" nav-link dropdown-toggle links-navegacao "  id="navDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Programaçao</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./programação.html">Programacao</a>
+                <a class="dropdown-item" href="#">Amigos da Palavra</a>
+                <a class="dropdown-item" href="#">A Tarde é Nossa</a>
+                <a class="dropdown-item" href="#">Boa Tarde Cariri</a>
+                <a class="dropdown-item" href="#">Ceara Diverso</a>
+                <a class="dropdown-item" href="#">Programa Denise Dantas</a>
+              </div>
+            </li> 
             <li class="nav-item active">
-              <a class="nav-link links-navegacao " href="#">Esporte</a>
+              <a class="nav-link links-navegacao" href="">Jornalismo</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
+              <a class="nav-link links-navegacao " href="./esportes.html">Esporte</a>
+            </li>
+            <li class="nav-item active">
               <a class="nav-link links-navegacao" href="#">Politica</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled links-navegacao" href="#">Cultura</a>
+            <li class="nav-item active">
+              <a class="nav-link  links-navegacao" href="#">Cultura</a>
             </li>
             <li class="nav-item active">
               <a class="nav-link links-navegacao" href="#">Religiosidade</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link links-navegacao" href="#">Economia</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link  links-navegacao" href="#">Quem Somos?</a>
+            <li class="nav-item active">
+              <a class="nav-link  links-navegacao" href="./quem_somos.html">Quem Somos?</a>
             </li>
           </ul>
         </div>
-        </div>
-
       </nav>
-      </nav>
+      
     </div>
   </header>
   <main>
-    <div class="container-fluid">
-      <div class="carrosel-noticias">
-        <h1>Principais Notícias</h1>
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <div class="carrosel-noticias w-100">
+      
+        <div id="carouselExampleIndicators" class="carousel slide w-100" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
           </ol>
           <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="./img/star wars.jpg" alt="Primeiro Slide" />
+            <div class="carousel-item w-100 active">
+              <img class="d-block slide-image" src="./img/Noticia1.png" alt="Policial segurando uma criança e sorrindo" />
               <div class="carousel-caption d-md-block">
-                <h5>Alguma coisa</h5>
-                <p>Qualquer coisa</p>
+                <a href="#" class="btn btn-outline-success">Cariri 24h</a>
+                <a href="#" class="btn btn-outline-success">Destaque</a>
+                <a href="#" class="btn btn-outline-success">Jornalismo</a>
+                <h4>PRF promove campanha “Policias contra o câncer infantil” que arrecadara doações no Ceará</h4>
+                <p>24 de Novembro.2023</p>
               </div>
             </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="./img/vader.png" alt="Segundo Slide" />
+            <div class="carousel-item  ">
+              <img class="d-block " src="./img/Noticia2.png" alt="" />
+              <div class="carousel-caption d-md-block">
+                <a href="#" class="btn btn-outline-success">Cariri 24h</a>
+                <a href="#" class="btn btn-outline-success">Destaque</a>
+                <a href="#" class="btn btn-outline-success">Jornalismo</a>
+                <h4>PRF promove campanha “Policias contra o câncer infantil” que arrecadara doações no Ceará</h4>
+                <p>24 de Novembro.2023</p>
+              </div>
             </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="./img/1338867.png" alt="Terceiro Slide" />
+            <div class="carousel-item ">
+              <img class="d-block " src="./img/Noticia3.png" alt="Aperto de mâos" />
+              <div class="carousel-caption d-md-block">
+                <a href="#" class="btn btn-outline-success">Destaque</a>
+                <a href="#" class="btn btn-outline-success">Jornalismo</a>
+                <h4>Governo do Ceará promove Black Friday de empregos com 3mil vagas</h4>
+                <p>23 de Novembro.2023</p>
+              </div>
+              
+            </div>
             </div>
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <a class="carousel-control-prev w-25" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Anterior</span>
           </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <a class="carousel-control-next w-25" href="#carouselExampleIndicators" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Próximo</span>
           </a>
@@ -122,18 +149,17 @@
         <div class="titulo-cards">
           <h2> Ultimas Notícias</h2>
         </div>
-      <div class="cards-noticias">
+      <div class="cards-noticias ">
         <div class=" noticia justify-content-center">
           <div class="cards">
             <div class="card" style="width: 16rem">
-              <img class="card-img-top" src="./img/star wars.jpg" alt="Imagem de capa do card" />
+              <img class="card-img-top" src="./img/Noticia4.png" alt="Imagem de capa do card" />
               <div class="card-body">
-                <h5 class="card-title">Eu nao aguento mais</h5>
+                <h4 class="card-title">Ceará recebe mais de 10 mil unidades na primeira seleção de propostas do novo Minha Casa Minha Vida</h4>
                 <p class="card-text">
-                  Artur Batista Chagas, estudante de ti, tdah, depressivo, e
-                  coisas piores, essa é a descriçao de um estudante de merda
+                  O Governo Federal, através do Ministério das Cidades, está dando início ao novo Minha Casa Minha Vida e o Ceará é um dos estados contemplados já na primeira fase. O governador Elmano de Freitas participou, nesta quarta-feira (22), em Brasília, da solenidade de anúncio das propostas selecionadas para o programa, acompanhado do presidente da República, Luiz Inácio Lula da Silva; do ministro das Cidades, Jader Filho; ministro-chefe da Casa Civil, Rui Costa; e o presidente da Caixa, Carlos Vieira, e outras autoridades.
                 </p>
-                <a href="#" class="btn btn-primary">Visitar</a>
+                <a href="#" class="btn btn-outline-dark">Ler Mais</a>
               </div>
             </div>
           </div>
@@ -141,14 +167,41 @@
         <div class=" noticia justify-content-center">
           <div class="cards">
             <div class="card" style="width: 16rem">
-              <img class="card-img-top" src="./img/star wars.jpg" alt="Imagem de capa do card" />
+              <img class="card-img-top" src="./img/Noticia6.png" alt="Imagem de capa do card" />
               <div class="card-body">
-                <h5 class="card-title">Eu nao aguento mais</h5>
+                <h4 class="card-title">Em Juazeiro do Norte, 16 UBSs marcam consultas e exames diretamente da unidade</h4>
                 <p class="card-text">
-                  Artur Batista Chagas, estudante de ti, tdah, depressivo, e
-                  coisas piores, essa é a descriçao de um estudante de merda
+                  Em busca de modernizar o atendimento para a população, Juazeiro do Norte implementou em 16 Unidades Básicas de Saúde, o Sistema de Marcação de Exames e Consultas- SIMEC, um sistema próprio que tem o objetivo de possibilitar a marcação de consultas e exames de forma direta e eficiente, permitindo que o paciente realize os procedimentos diretamente no local de atendimento.
                 </p>
-                <a href="#" class="btn btn-primary">Visitar</a>
+                <a href="#" class="btn btn-outline-dark">Ler Mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="noticia justify-content-center">
+          <div class="cards">
+            <div class="card" style="width: 16rem">
+              <img class="card-img-top" src="./img/Noticia7.png" alt="Imagem de capa do card" />
+              <div class="card-body">
+                <h4 class="card-title">Governo do Ceará sanciona lei que isenta cozinhas comunitárias da tarifa de água</h4>
+                <p class="card-text">
+                  Parceiros e beneficiários do Programa Ceará Sem Fome receberam uma grande notícia, nesta terça-feira (21). O governador Elmano de Freitas sancionou a lei que isenta as cozinhas da iniciativa do pagamento da tarifa de água e esgoto. A ação acontece em parceria com a Companhia de Água e Esgoto do Ceará (Cagece). A assinatura, que aconteceu no Palácio da Abolição, em Fortaleza, também contou com as presenças da primeira-dama e presidente do Comitê Intersetorial de Governança do Ceará Sem Fome, Lia Freitas, e o presidente da Cagece, Neuri 
+                </p>
+                <a href="#" class="btn btn-outline-dark">Ler Mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="noticia justify-content-center">
+          <div class="cards">
+            <div class="card" style="width: 16rem">
+              <img class="card-img-top" src="./img/Noticia8.png" alt="Imagem de capa do card" />
+              <div class="card-body">
+                <h4 class="card-title">Mais seis mil postos de trabalho foram criados no Ceará.</h4>
+                <p class="card-text">
+                  Boa notícia sobre geração de empregos no Ceará. Em outubro, foi registrada a criação de 6.130 novos postos de trabalho, mantendo a trajetória de crescimento pelo 9º mês consecutivo. O resultado é proveniente da relação entre o número de admitidos (47.610) e demitidos (41.480). Os dados são do Cadastro-Geral de Empregados e Desempregados (Novo Caged), e foram divulgados nesta terça-feira (28) pelo Ministério do Trabalho e Emprego.
+                </p>
+                <a href="#" class="btn btn-outline-dark">Ler Mais</a>
               </div>
             </div>
           </div>
@@ -158,12 +211,11 @@
             <div class="card" style="width: 16rem">
               <img class="card-img-top" src="./img/star wars.jpg" alt="Imagem de capa do card" />
               <div class="card-body">
-                <h5 class="card-title">Eu nao aguento mais</h5>
+                <h4 class="card-title">Mais seis mil postos de trabalho foram criados no Ceará.</h4>
                 <p class="card-text">
-                  Artur Batista Chagas, estudante de ti, tdah, depressivo, e
-                  coisas piores, essa é a descriçao de um estudante de merda
+                  Boa notícia sobre geração de empregos no Ceará. Em outubro, foi registrada a criação de 6.130 novos postos de trabalho, mantendo a trajetória de crescimento pelo 9º mês consecutivo. O resultado é proveniente da relação entre o número de admitidos (47.610) e demitidos (41.480). Os dados são do Cadastro-Geral de Empregados e Desempregados (Novo Caged), e foram divulgados nesta terça-feira (28) pelo Ministério do Trabalho e Emprego.
                 </p>
-                <a href="#" class="btn btn-primary">Visitar</a>
+                <a href="#" class="btn btn-outline-dark">Ler Mais</a>
               </div>
             </div>
           </div>
@@ -173,12 +225,11 @@
             <div class="card" style="width: 16rem">
               <img class="card-img-top" src="./img/star wars.jpg" alt="Imagem de capa do card" />
               <div class="card-body">
-                <h5 class="card-title">Eu nao aguento mais</h5>
+                <h4 class="card-title">Mais seis mil postos de trabalho foram criados no Ceará.</h4>
                 <p class="card-text">
-                  Artur Batista Chagas, estudante de ti, tdah, depressivo, e
-                  coisas piores, essa é a descriçao de um estudante de merda
+                  Boa notícia sobre geração de empregos no Ceará. Em outubro, foi registrada a criação de 6.130 novos postos de trabalho, mantendo a trajetória de crescimento pelo 9º mês consecutivo. O resultado é proveniente da relação entre o número de admitidos (47.610) e demitidos (41.480). Os dados são do Cadastro-Geral de Empregados e Desempregados (Novo Caged), e foram divulgados nesta terça-feira (28) pelo Ministério do Trabalho e Emprego.
                 </p>
-                <a href="#" class="btn btn-primary">Visitar</a>
+                <a href="#" class="btn btn-outline-dark">Ler Mais</a>
               </div>
             </div>
           </div>
@@ -188,13 +239,11 @@
             <div class="card" style="width: 16rem">
               <img class="card-img-top" src="./img/star wars.jpg" alt="Imagem de capa do card" />
               <div class="card-body">
-                <h5 class="card-title">Eu nao aguento mais</h5>
+                <h4 class="card-title">Mais seis mil postos de trabalho foram criados no Ceará.</h4>
                 <p class="card-text">
-                  Artur Batista Chagas, estudante de ti, tdah, depressivo, e
-                  coisas piores, essa é a descriçao de um estudante de merda
-
+                  Boa notícia sobre geração de empregos no Ceará. Em outubro, foi registrada a criação de 6.130 novos postos de trabalho, mantendo a trajetória de crescimento pelo 9º mês consecutivo. O resultado é proveniente da relação entre o número de admitidos (47.610) e demitidos (41.480). Os dados são do Cadastro-Geral de Empregados e Desempregados (Novo Caged), e foram divulgados nesta terça-feira (28) pelo Ministério do Trabalho e Emprego.
                 </p>
-                <a href="#" class="btn btn-primary">Visitar</a>
+                <a href="#" class="btn btn-outline-dark">Ler Mais</a>
               </div>
             </div>
           </div>
@@ -204,29 +253,11 @@
             <div class="card" style="width: 16rem">
               <img class="card-img-top" src="./img/star wars.jpg" alt="Imagem de capa do card" />
               <div class="card-body">
-                <h5 class="card-title">Eu nao aguento mais</h5>
+                <h4 class="card-title">Mais seis mil postos de trabalho foram criados no Ceará.</h4>
                 <p class="card-text">
-                  Artur Batista Chagas, estudante de ti, tdah, depressivo, e
-                  coisas piores, essa é a descriçao de um estudante de merda
-
+                  Boa notícia sobre geração de empregos no Ceará. Em outubro, foi registrada a criação de 6.130 novos postos de trabalho, mantendo a trajetória de crescimento pelo 9º mês consecutivo. O resultado é proveniente da relação entre o número de admitidos (47.610) e demitidos (41.480). Os dados são do Cadastro-Geral de Empregados e Desempregados (Novo Caged), e foram divulgados nesta terça-feira (28) pelo Ministério do Trabalho e Emprego.
                 </p>
-                <a href="#" class="btn btn-primary">Visitar</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="noticia justify-content-center">
-          <div class="cards">
-            <div class="card" style="width: 16rem">
-              <img class="card-img-top" src="./img/star wars.jpg" alt="Imagem de capa do card" />
-              <div class="card-body">
-                <h5 class="card-title">Eu nao aguento mais</h5>
-                <p class="card-text">
-                  Artur Batista Chagas, estudante de ti, tdah, depressivo, e
-                  coisas piores, essa é a descriçao de um estudante de merda
-
-                </p>
-                <a href="#" class="btn btn-primary">Visitar</a>
+                <a href="#" class="btn btn-outline-dark">Ler Mais</a>
               </div>
             </div>
           </div>
@@ -243,11 +274,14 @@
           <li><a href="#" target="_blank" title="youtube"><i class="bi bi-instagram"></i></a></li>
         </ul>
       </nav>
-      <a href="#" target="_blank" title="WordPress">Proudly powered by WordPress</a>
+      <a href="#" class="btn btn-outline-dark">Ler Mais</a>
     </div>
-    
+    <div class="whats">
       <a href="https://api.whatsapp.com/send?phone=55{DDDNÚMERO}" class="whats-button" aria-label="Botão para contato no WhatsApp"><i class="bi whats-icon bi-whatsapp"></i></a>
-    
+    </div>
+    <div class="butao-topo">
+      <button class="back-to-top" onclick="backTop()"><i class="bi bi-arrow-up-circle-fill"></i></button>
+    </div>
   </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -259,6 +293,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"></script>
+      <script src="js/jquery.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/botao-topo.js"></script>
 </body>
 
 </html>

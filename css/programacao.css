@@ -1,0 +1,25 @@
+.programacao {
+    
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.programacao__titulo{
+    text-align: center;
+    margin: 2rem 0 5rem 0;
+    
+}
+.programacao__tabela {
+   margin-top: 1rem;
+    
+}
+.programacao__botoes {
+    margin: 1.75rem 0;
+}
+.programacao__titulo-dia {
+    display: none;
+}
+.programacao__dia {
+    display: none;
+}

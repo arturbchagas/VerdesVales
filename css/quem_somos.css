@@ -1,0 +1,63 @@
+.quem-somos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 1rem 3rem;
+    
+}
+.quem-somos__titulo {
+    margin: 3rem;
+}
+.quem-somos__text {
+    margin-bottom: 1rem;
+    
+}
+.quem-somos__img {
+    width: 100%;
+    margin: 1rem;
+    
+}
+
+
+.quem-somos__img2 {
+    width: 100%;
+    margin: 1rem;
+}
+
+.quem-somos__img:hover {
+    
+    width: 102%;
+    transition: 0.4s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.quem-somos__img2:hover {
+    width: 102%;
+    transition: 0.4s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+}
+@media screen and (min-width:1024px) {
+    .quem-somos__img {
+        width: 80%;
+    }
+    .quem-somos__img2 {
+        width: 80%;
+    }
+    .quem-somos__img:hover {
+    
+        width: 82%;
+        transition: 0.4s;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    .quem-somos__img2:hover {
+        width: 82%;
+        transition: 0.4s;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        
+    }
+    
+    
+    
+}
